@@ -1,5 +1,6 @@
 <?php
-require_once "inc/database.php";
+session_start();
+require_once "../inc/database.php";
 if(isset($_POST["submit"])){
     $email = htmlspecialchars($_POST["email"]);
     $password = htmlspecialchars($_POST["password"]);
@@ -17,15 +18,21 @@ if(isset($_POST["submit"])){
         // print_r($userInfo);
         // echo "<pre>";
         if(empty($userInfo)){
+            // definir la variable de session role
             echo "utilisateur inconnu";
         }else{
             // verifier si le mdp est correct
             if(password_verify($password,$userInfo["password"])){
                 // si l'utilisateur est un admin
                 if($userInfo["role"] == "admin"){
-                    header("Location: admin/admin.php");
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    header("Location: http://localhost/projetHotel/admin/admin.php");
                 }else{
-                    header("Location: user_home.php");
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    $_SESSION["id_user"] = $userInfo["id_user"];
+                    header("Location: http://localhost/projetHotel/user_home.php");
                 }
             }else{
                 echo "Ahh tu as oublié ton mot de passe ?";

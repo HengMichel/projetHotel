@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
               <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active form-check-inline fw-bolder" aria-current="page" href="http://localhost/login.php">Login</a>
+                  <a class="nav-link active form-check-inline fw-bolder" aria-current="page" href="http://localhost/projetHotel/login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bolder" href="http://localhost/register.php">Sign-up</a>
+                  <a class="nav-link fw-bolder" href="http://localhost/projetHotel/register.php">Sign-up</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Pricing</a>
