@@ -12,7 +12,7 @@
     //  executer la requete
     try {
         $request->execute(array($hotelName,$location,$capacityHotel));
-        header("Location: http://localhost/projetHotel/admin/hotel_list.php");
+        header("Location: https://autumn-drunk.000webhostapp.com/admin/hotel_list.php");
     } catch (PDOException $e) {
         $e->getMessage();
     }
