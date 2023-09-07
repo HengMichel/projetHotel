@@ -9,7 +9,7 @@ $listRoom = roomList();
     <?php foreach($listRoom as $room){ ?>
         <div class="card border-success-subtle mb-5" style="width: 28rem;">
             <div class="img_room">
-                <img src="assets/imgs/<?= $room["room_imgs"] ?> " class="card-img-top" alt="image">
+                <img src="assets/imgs/<?= $room["room_imgs"] ?> " class="card-img-top img-fluid" alt="image">
             </div>
             <div class="card-body">
                 <p class="card-text fa-2x"><?= $room["price"]; ?>€/nuit</p>
