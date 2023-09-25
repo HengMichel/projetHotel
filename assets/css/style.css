@@ -4,7 +4,8 @@ body{
     background-color: #edede9;
 
     
-    background-image: url(../imgs/escalierRouge.avif);
+    /* background-image: url(../imgs/escalierRouge.avif); */
+    background-color: blanchedalmond;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

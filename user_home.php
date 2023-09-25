@@ -28,7 +28,10 @@ $price = 0;
                     <td class="booking_end_date border-success-subtle border-3 mt-2"><?= $book["booking_end_date"]; ?></td>
                     <td class="booking_state border-success-subtle border-3 mt-2"><?= $book["booking_state"]; ?></td>
                     <td class="booking_price border-success-subtle border-3 mt-2"><?= $book["booking_price"]; ?></td>
-                    <td class="btn btn-success-subtle m-3 border-success-subtle border-3 mt-2"><a href="model/db_booking.php?id_book=<?=$book['id_booking']; ?>">Cancel</a></td>
+                    <td class="btn btn-success-subtle m-3 border-success-subtle border-3 mt-2">
+                        <!-- <a href="model/db_booking.php?id_book= -->
+                        <a href="http://localhost/model/db_booking.php?id_book=
+                        <?=$book['id_booking']; ?>">Cancel</a></td>
                 </tr>
             <?php } ?>
         </tbody>

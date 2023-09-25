@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include_once "inc/header.php"; 
-require_once "model/functions.php";
+include_once "./inc/header.php"; 
+require_once "./model/functions.php";
 $listRoom = roomList();
 ?>
 
@@ -15,7 +15,9 @@ $listRoom = roomList();
                 <p class="card-text fa-2x"><?= $room["price"]; ?>€/nuit</p>
                 <p class="card-text fa-bitcoin-sign fa-bitcoin-sign link-warning"><?= $room["category"]; ?></p>
                 <p class="card-text"><?= $room["persons"]; ?> Persons</p>
-                <a class="btn btn-info bg-secondary border-success-subtle border-2 link-light" href="./booking.php?room=<?= $room["id_room"]; ?>&price=<?= $room['price'] ?>">Book this Room</a>
+                <a class="btn btn-info bg-secondary border-success-subtle border-2 link-light" 
+                href="./booking.php?room=
+                <?= $room["id_room"]; ?>&price=<?= $room['price'] ?>">Book this Room</a>
             </div>
         </div>
     <?php } ?>

@@ -13,7 +13,10 @@
     <!-- ici la navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 ">
         <div class="container-fluid ">
-            <a class="navbar-brand table-group-divider fw-bold" href="https://autumn-drunk.000webhostapp.com ">DELUXE HÔTEL</a>
+            <!-- <a class="navbar-brand table-group-divider fw-bold" href="https://autumn-drunk.000webhostapp.com "> -->
+            <a class="navbar-brand table-group-divider fw-bold" href="http://localhost/projetHotel/index.php">
+            
+            DELUXE HÔTEL</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -21,10 +24,16 @@
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
               <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active form-check-inline fw-bolder" aria-current="page" href="https://autumn-drunk.000webhostapp.com/login.php">Login</a>
+                  <!-- <a class="nav-link active form-check-inline fw-bolder" aria-current="page" 
+                  href="https://autumn-drunk.000webhostapp.com/login.php">
+                  Login</a> -->
+                  <a class="nav-link active form-check-inline fw-bolder" aria-current="page" 
+                  href="http://localhost/projetHotel/login.php">
+                  Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bolder" href="https://autumn-drunk.000webhostapp.com/register.php">Sign-up</a>
+                  <!-- <a class="nav-link fw-bolder" href="https://autumn-drunk.000webhostapp.com/register.php">Sign-up</a> -->
+                  <a class="nav-link fw-bolder" href="http://localhost/projetHotel/register.php">Sign-up</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Pricing</a>
