@@ -2,6 +2,7 @@
 // require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
 require_once "inc/database.php";
 
+
 function  hotelList(){
     //  se connecter a la db (database) ou bd (base de données)
     $db = dbConnexion();

@@ -23,6 +23,7 @@ if(isset($_POST["book"])){
     // si $today est > a la date de début de réservation ou $today est > à la date de fin de réservation
     if(strtotime($today)> strtotime($startDate) || strtotime($today)> strtotime($endtDate)){
         echo '<script>alert("votre date de début ou de fin de réservation ne peut pas être inferieur à la date d aujourd hui")</script>';
+
         echo '<script>window.location.href = "http://localhost/booking.php?room='.$idRoom.'&price='.$price.'";</script>';
 
     }else{
@@ -50,7 +51,8 @@ if(isset($_POST["book"])){
                         // $request->execute(array($startDate,$endDate,$_SESSION["id_user"],$idRoom,$price*$nbDays,'in progress'));
                         $request->execute(array($startDate, $endDate, $_SESSION['id_user'], $idRoom, $totalPrice, "in progress"));
 
-                        header("Location: http://localhost/user_home.php");
+                        header("Location: http://localhost/projetHotel/user_home.php");
+
     
                     // Réservation réussie
                     echo "Réservation réussie!";
@@ -83,7 +85,8 @@ if(isset($_GET['id_book'])){
         try {
             $request->execute(array("cancel", $_GET['id_book']));
             // redirection vers user_home.php
-            header("Location: http://localhost/user_home.php");
+
+            header("Location: http://localhost/projetHotel/user_home.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

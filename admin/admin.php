@@ -3,6 +3,7 @@ session_start();
 // si $_SESSION["role"] est définie mais que sa valeur est différente de "admin" ou bien $_SESSION["role"] n'est pas définie
 if(!isset($_SESSION["role"]) || $_SESSION["role"] != "admin"){
   header("Location: http://localhost/login.php");
+
 }
 include_once "../inc/header.php"; 
 ?>

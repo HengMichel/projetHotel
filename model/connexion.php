@@ -27,14 +27,18 @@ if(isset($_POST["submit"])){
                 if($userInfo["role"] == "admin"){
                     // definir la variable de session role
                     $_SESSION["role"] = $userInfo ["role"];
+
                     // header("Location: https://autumn-drunk.000webhostapp.com/admin/admin.php");
                     header("Location: http://localhost/projetHotel/admin/admin.php");
+
                 }else{
                     // definir la variable de session role
                     $_SESSION["role"] = $userInfo ["role"];
                     $_SESSION["id_user"] = $userInfo["id_user"];
+                    
                     // header("Location: https://autumn-drunk.000webhostapp.com/user_home.php");
                     header("Location: http://localhost/projetHotel/user_home.php");
+
                 }
             }else{
                 echo "Ahh tu as oublié ton mot de passe ?";
